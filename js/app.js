@@ -37,9 +37,11 @@ function outer() {
     function inner() {
         let num = 3;
         num++;
-        console.log(num);
+        // console.log(num);
     }
     inner();
 }
 
 outer();
+
+console.log(typeof typeof 1);
