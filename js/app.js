@@ -33,10 +33,10 @@ let num = 4;
 
 function outer() {
     let num = 2;
-    
+
     function inner() {
-        num++;
         let num = 3;
+        num++;
         console.log(num);
     }
     inner();
