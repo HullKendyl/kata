@@ -22,9 +22,24 @@ function privateVariable() {
 
 const getSecretNumber = privateVariable();
 
-console.log(privateVariable());
-console.log(getSecretNumber());
+// console.log(privateVariable());
+// console.log(getSecretNumber());
 
 let n = 10;
 
 // console.log(fibonacci(n));
+
+let num = 4;
+
+function outer() {
+    let num = 2;
+    
+    function inner() {
+        num++;
+        let num = 3;
+        console.log(num);
+    }
+    inner();
+}
+
+outer();
