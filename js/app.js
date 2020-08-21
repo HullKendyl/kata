@@ -12,6 +12,19 @@ function fibonacci(n) {
 
 } 
 
+function privateVariable() {
+    const secretNumber = 1;
+
+    return function() {
+        return secretNumber;
+    }
+}
+
+const getSecretNumber = privateVariable();
+
+console.log(privateVariable());
+console.log(getSecretNumber());
+
 let n = 10;
 
-console.log(fibonacci(n));
+// console.log(fibonacci(n));
